@@ -1,0 +1,102 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Animation</title>
+  </head>
+
+  <style>
+
+  #redBlock{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
+
+  #yellowBlock{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
+
+  #blueBlock{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
+
+  #greenBlock{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
+
+  span{
+    color: black;
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    margin-left: 80px; 
+    z-index: 1;
+  }
+
+  #row1,#row2{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+    transition-property: transform;
+    transition-property: rotate; 
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  #main{
+    margin-top: 250px ;
+    margin-left: 250px; 
+  }
+
+  /* div {
+  transition-property: transform;
+  transition-property: rotate; 
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  } */
+
+  #redBlock:hover{
+  transform: rotate(90deg);
+  transform-origin: top left;
+  }
+  #yellowBlock:hover{
+  transform: rotateZ(-90deg);
+  transform-origin: top right;
+  }
+  #blueBlock:hover{
+  transform-origin: left bottom;
+  transform: rotateZ(-90deg);
+  }
+  #greenBlock:hover{
+  transform-origin: right bottom ;
+  transform: rotateZ(90deg);
+  } 
+</style>
+  <body>
+    <div id="main">
+      <div id="row1">
+        <div id="redBlock"></div>
+        <div id="yellowBlock"></div>
+      </div>
+      <span id="Hi-text"><b>Hi!</b></span>
+      <div id="row2">
+        <div id="blueBlock"></div>
+        <div id="greenBlock"></div>
+      </div> 
+    </div>
+  </body>
+</html>

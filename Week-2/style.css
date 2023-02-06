@@ -1,0 +1,32 @@
+
+    #textContent{
+      display: flex;
+      flex-direction: row;
+      flex-shrink: auto ;
+      padding: 50px 50px 50px 50px;
+      text-align: justify;
+    }
+
+    summary{
+      padding: 0px 50px 50px 50px;
+    }
+
+    h3{
+      padding: 50px 50px 0px 50px;
+    }
+
+    form{
+      padding-left: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    #firstName,#lastName,#email,#phone,#pwd,#confirmpwd,#checkboxAgree,#selectCountry,#signup{
+      padding-top: 20px;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+  
