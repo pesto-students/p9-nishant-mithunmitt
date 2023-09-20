@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Catty Board Music</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+  <style>
+    .Catty-MusicBoard {
+      background-color: black;
+      height: 350px;
+    }
+    .Song-List {
+      background-color: white;
+      height: 300px;
+    }
+    .SongPlay-Options {
+      background-color: skyblue;
+      height: 150px;
+    }
+    .BigCattyBoard{
+      padding: 50px 180px 30px 60px;
+    }
+    .SmallCattyBoard{
+      padding: 20px 20px 40px 20px;
+    }
+    tr:nth-child(even) {
+      background-color: Lightgrey;
+    }
+    .sidebar {
+      height: 85%;
+      width: 40px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: lightgrey;
+      overflow-x: hidden;
+      padding-top: 26px;
+    }
+    .sidebar a {
+      padding: 10px 8px 30px 8px;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      display: block;
+    }
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    .main {
+      margin-left: 160px; 
+      padding: 0px 10px;
+    }
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+    h1{
+      padding: 0px 120px 0px 0px ;
+    }
+    p{
+      padding: 0px 50px 0px 0px ;
+    }
+    span{
+      padding: 0px 50px 0px 0px ;
+    }
+    td{
+      padding-top: 10px;
+    }
+  </style>
+  
+<body>
+   <main>
+     <div class="Catty-MusicBoard">
+        <div class="BigCattyBoard">
+          <img src='https://vif1g.csb.app/src/assets/cattyboard.jpg' alt='cattyBoard' align="left"></img> 
+        </div>
+        <h1 style="color:white">&emsp;CattyBoard Top 100 Single Charts(11.06.36)</h1>
+        <p style="color:white">&emsp;&emsp;Unknown Artist</p>
+        <p style="color:white">&emsp;&emsp;2036.Charts.100songs</p>
+        <span style="color:white"><i class="fa fa-play" style="font-size:15px;color:white; padding-left: 30px; padding-top: 50px;"></i>&emsp;Play All</span> 
+        <span style="color:white"><i class="fa fa-plus" style="font-size:15px;color:white;"></i>Add me</span> 
+        <span style="color:white"><i class="fa fa-ellipsis-h" style="font-size:15px;color:white;"></i> More</span> 
+      </div>
+      <div class="sidebar">
+        <a href="#services"><i class="fa fa-fw fa fa-bars"></i></a>
+        <a href="#services"><i class="fa fa-fw fa-home"></i></a>
+        <a href="#services"><i class="fa fa-fw fa-search"></i></a>
+        <a href="#services"><i class="fa fa-fw fa fa-volume-up"></i></a>
+        <a href="#services"><i class="fa fa-fw fa fa-user"></i></a>
+        <a href="#services"><i class="fa fa-fw fa fa-cog"></i></a>
+        <a href="#services"><i class="fa fa-fw fa fa-spotify"></i></a>
+        <a href="#services"><i class="fa fa-fw fa fa-soundcloud"></i></a>
+      </div>
+      <div class="Song-List">
+        <table>
+          <tr>
+              <td colspan="200" style="padding-left: 40px;">1.One Dance</td>
+              <td style="padding-left: 200px;">Description1</td>
+              <td style="padding-left: 200px;">2:54</td>
+              <td><span style="color:blue; padding-left: 200px">|CATTY CLOUD SYNC|</span></td>
+          </tr>
+          <tr>
+              <td colspan="200" style="padding-left: 40px;">2.Panda</td>
+              <td style="padding-left: 200px;">Description2</td>
+              <td style="padding-left: 200px;">3:21</td>
+              <td><span style="color:blue; padding-left: 200px">|CATTY CLOUD SYNC|</span></td>
+          </tr>
+          <tr>
+              <td colspan="200" style="padding-left: 40px">3.Can't Stop the feeling!</td>
+              <td style="padding-left: 200px">Description3</td>
+              <td style="padding-left: 200px">4:34</td>
+              <td><span style="color:blue; padding-left: 200px">|CATTY CLOUD SYNC|</span></td>
+          </tr>
+          <tr>
+          <td colspan="200" style="padding-left: 40px">4.Work From Home</td>
+          <td style="padding-left: 200px">Description4</td>
+          <td style="padding-left: 200px">3:54</td>
+          <td><span style="color:blue; padding-left: 200px">|CATTY CLOUD SYNC|</span></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  <footer>
+    <div class="SongPlay-Options">
+      <div class="SmallCattyBoard">
+        <img src='https://vif1g.csb.app/src/assets/cattyboard.jpg' alt='cattyBoard'  width="120" height="120" align="left"></img> 
+      </div>
+      <p style="color:white;"><b>&emsp;If I Ain't Love</b></p> 
+      <span style="color:white; padding-left: 20px; padding-right: 300px;"><b>Artist David<b> </span> 
+      <i class="fa fa-step-backward" style="font-size:20px;color:white; padding-left: 90px;"></i>
+      <i class="fa fa-pause" style="font-size:20px;color:white; padding-left: 90px;"> </i>
+      <i class="fa fa-step-forward" style="font-size:20px;color:white;padding-left: 90px;"> </i>
+      <i class="fa fa-refresh" style="font-size:20px;color:white;padding-left: 90px;"></i>
+      <i class="fa fa-random" style="font-size:20px;color:white;padding-left: 90px;"></i>
+    </div>
+  </footer>
+  </body>
+</html>
